@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'><!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>Periodic Table Information Finder</title>
+
+</head>
+<style></style>
+
+<body>
+    <h2 style="text-align: center; margin-bottom: 15px;">Non-Metal Elements</h2>
+    <p>Instructions: Enter the symbol of a non-metal element (Example: H, O, Cl, Ne, Xe.)</p>
+    <p>Or don't, it already shows all of them.</p>
+
+    <p>Element Finder</p>
+    <input style="width: 500px;" type="txt" id="elementfinder"
+        placeholder="Input the symbol of an element that is a nonmetal!"><br>
+    <input type="button" py-click="collect_nonmetal" value="Search Details"><br>
+    <div style="margin-top: 10px; font-family: monospace;" id="output"></div>
+    <py-script src="mainst.py"></py-script>
+</body>
+
+</html>
